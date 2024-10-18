@@ -214,3 +214,132 @@
       -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
   }
 }
+
+.hero-section{
+  position: relative;
+  width:100%;
+}
+
+.custom-line {
+  width: 4px; 
+  height: 160px; 
+  background: linear-gradient(180deg, #915EFF, rgba(115, 38, 255, 0));
+}
+
+@media (min-width: 576px) {
+  .custom-line {
+    height: 320px; 
+  }
+}
+
+@media (max-width: 576px) {
+  .bottom-xs-10 {
+    bottom: 40px; /* Equivalent to bottom-10 in Tailwind */
+  }
+}
+
+.custom-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+@media (max-width: 576px) {
+  .card-width {
+    width: 250px;
+  }
+}
+
+.formation-card{
+  background: #151030;
+  border-radius: 1rem;
+  max-width: 360px;
+}
+
+.github-image {
+  background: linear-gradient(135deg, black, gray); 
+  width: 40px;    
+  height: 40px;   
+  border-radius: 50%; 
+  display: flex;  
+  justify-content: center;
+  align-items: center; 
+  cursor: pointer; 
+}
+
+.contact{
+  display: flex;                 
+    flex-direction: column-reverse; 
+    gap: 2.5rem;                  
+    overflow: hidden;             
+}
+
+@media (min-width: 1280px) {
+  .contact {
+      margin-top: 3rem;        /* Equivalent to xl:mt-12 */
+      flex-direction: row;     /* Change to row on extra-large screens */
+  }
+}
+
+.placeholder-secondary::placeholder{
+  color:'#aaa6c3'
+}
+
+.px-8 {
+  padding-left: 2rem;  
+  padding-right: 2rem; 
+}
+
+
+.contactForm {
+  display: flex;
+  flex-direction: column-reverse;
+  overflow: hidden;
+  margin-top: 0; 
+}
+
+@media (min-width: 1200px) { 
+  .contactForm {
+      margin-top: 3rem;
+      flex-direction: row;
+  }
+}
+
+.contactForm > * {
+  margin-bottom: 2.5rem; 
+}
+
+.contactForm > *:last-child {
+  margin-bottom: 0; 
+}
+
+.contactplaceholder {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.contactFormButton {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.earth {
+  
+  height: 350px; 
+}
+
+@media (min-width: 768px) { 
+  .earth {
+      height: 550px; 
+  }
+}
+
+@media (min-width: 1280px) { 
+  .earth {
+      flex: 1; 
+      height: auto; 
+  }
+}
